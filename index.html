@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Attendance Viewer</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<h1>Android Application Development</h1>
+
+<h2>Student Attendance</h2>
+
+<label>Select Attendance Type:</label>
+<select id="typeSelect" onchange="loadAttendanceFile()">
+    <option value="">-- Select --</option>
+    <option value="theory">Theory</option>
+    <option value="practical">Practical</option>
+</select>
+
+<br><br>
+
+<label>Select Enrollment Number:</label>
+<select id="enrollmentSelect" onchange="filterAttendance()">
+    <option value="">-- Select --</option>
+</select>
+
+
+<table id="attendanceTable">
+    <thead>
+        <tr>
+            <th>Enrollment No</th>
+            <th>Name</th>
+            <th>Section</th>
+            <th>Total Present</th>
+            <th>Total Absent</th>
+            <th>Percentage</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+
+<script>
+let attendanceData = [];
+
+// Load CSV based on Theory / Practical
+function loadAttendanceFile() {
+    let type = document.getElementById("typeSelect").value;
+    let file = "";
+
+    if (type === "theory") file = "theory.csv";
+    else if (type === "practical") file = "practical.csv";
+    else return;
+
+    fetch(file)
+    .then(res => res.text())
+    .then(data => {
+        attendanceData = [];
+        let rows = data.split("\n");
+        rows.shift(); // remove header
+
+        rows.forEach(row => {
+            if (row.trim() === "") return;
+
+            let cols = row.split(",");
+
+            if (cols.length >= 7) {
+                attendanceData.push({
+                    enroll: cols[0].trim(),
+                    name: cols[1].trim(),
+                    section: cols[2].trim(),
+                    tp: cols[3].trim(),
+                    tab: cols[4].trim(),
+                    per: cols[5].trim(),
+                    sta: cols[6].trim()
+                });
+            }
+        });
+
+        loadEnrollmentDropdown();
+    });
+}
+
+// Load Enrollment Numbers
+function loadEnrollmentDropdown() {
+    let select = document.getElementById("enrollmentSelect");
+    select.innerHTML = '<option value="">-- Select --</option>';
+
+    let uniqueEnrollments = [...new Set(
+        attendanceData.map(a => a.enroll)
+    )];
+
+    uniqueEnrollments.forEach(enroll => {
+        let opt = document.createElement("option");
+        opt.value = enroll;
+        opt.textContent = enroll;
+        select.appendChild(opt);
+    });
+
+    // Clear table
+    document.querySelector("#attendanceTable tbody").innerHTML = "";
+}
+
+// Display attendance
+function filterAttendance() {
+    let enroll = document.getElementById("enrollmentSelect").value;
+    let tbody = document.querySelector("#attendanceTable tbody");
+    tbody.innerHTML = "";
+
+    let result = attendanceData.filter(a => a.enroll === enroll);
+
+    result.forEach(a => {
+        tbody.innerHTML += `
+            <tr>
+                <td>${a.enroll}</td>
+                <td>${a.name}</td>
+                <td>${a.section}</td>
+                <td>${a.tp}</td>
+                <td>${a.tab}</td>
+                <td>${a.per}</td>
+                <td>${a.sta}</td>
+            </tr>
+        `;
+    });
+}
+</script>
+
+</body>
+</html>
