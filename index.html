@@ -7,31 +7,62 @@
             font-family: Arial;
             padding: 20px;
         }
-        table {
-            border-collapse: collapse;
-            width: 60%;
+
+        .card {
+            max-width: 400px;
+            border: 1px solid #ccc;
+            padding: 15px;
             margin-top: 20px;
+            border-radius: 8px;
+            font-size: 16px;
         }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: center;
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            border-bottom: 1px solid #eee;
         }
-        th {
-            background-color: #f2f2f2;
+
+        .label {
+            font-weight: bold;
         }
+
+        .value {
+            text-align: right;
+        }
+        .status-eligible {
+            color: green;
+            font-weight: bold;
+        }
+
+        .status-not-eligible {
+            color: red;
+            font-weight: bold;
+        }
+
     </style>
 </head>
-<body>
-<h1>Android Application Development</h1>
 
+<body>
+
+<h1>Android Application Development</h1>
 <h2>Student Attendance</h2>
+
+<label>Select Section:</label>
+<select id="sectionSelect" onchange="loadAttendanceFile()">
+    <option value="">-- Select --</option>
+    <option value="csea">CSE A</option>
+    <option value="cseb">CSE B</option>
+</select>
+
+<br><br>
 
 <label>Select Attendance Type:</label>
 <select id="typeSelect" onchange="loadAttendanceFile()">
     <option value="">-- Select --</option>
-    <option value="theory">Theory</option>
-    <option value="practical">Practical</option>
+    <option value="t">Theory</option>
+    <option value="p">Practical</option>
 </select>
 
 <br><br>
@@ -41,106 +72,89 @@
     <option value="">-- Select --</option>
 </select>
 
-
-<table id="attendanceTable">
-    <thead>
-        <tr>
-            <th>Enrollment No</th>
-            <th>Name</th>
-            <th>Section</th>
-            <th>Total Present</th>
-            <th>Total Absent</th>
-            <th>Percentage</th>
-            <th>Status</th>
-        </tr>
-    </thead>
-    <tbody></tbody>
-</table>
-
+<div id="attendanceCard" class="card"></div>
 
 <script>
 let attendanceData = [];
 
-// Load CSV based on Theory / Practical
 function loadAttendanceFile() {
+    let section = document.getElementById("sectionSelect").value;
     let type = document.getElementById("typeSelect").value;
     let file = "";
 
-    if (type === "theory") file = "theory.csv";
-    else if (type === "practical") file = "practical.csv";
-    else return;
+    if (section && type) {
+        file = section + type + ".csv";  
+        // cseat.csv, cseap.csv, csebt.csv, csebp.csv
+    } else {
+        return;
+    }
 
     fetch(file)
-    .then(res => res.text())
-    .then(data => {
-        attendanceData = [];
-        let rows = data.split("\n");
-        rows.shift(); // remove header
+        .then(res => res.text())
+        .then(data => {
+            attendanceData = [];
+            let rows = data.split("\n");
+            rows.shift();
 
-        rows.forEach(row => {
-            if (row.trim() === "") return;
+            rows.forEach(row => {
+                if (!row.trim()) return;
+                let cols = row.split(",");
 
-            let cols = row.split(",");
-
-            if (cols.length >= 7) {
                 attendanceData.push({
-                    enroll: cols[0].trim(),
-                    name: cols[1].trim(),
-                    section: cols[2].trim(),
-                    tp: cols[3].trim(),
-                    tab: cols[4].trim(),
-                    per: cols[5].trim(),
-                    sta: cols[6].trim()
+                    enroll: cols[0],
+                    name: cols[1],
+                    type: cols[2],
+                    tp: cols[3],
+                    tab: cols[4],
+                    per: cols[5],
+                    sta: cols[6]
                 });
-            }
-        });
+            });
 
-        loadEnrollmentDropdown();
-    });
+            loadEnrollmentDropdown();
+        });
 }
 
-// Load Enrollment Numbers
 function loadEnrollmentDropdown() {
     let select = document.getElementById("enrollmentSelect");
     select.innerHTML = '<option value="">-- Select --</option>';
 
-    let uniqueEnrollments = [...new Set(
-        attendanceData.map(a => a.enroll)
-    )];
-
-    uniqueEnrollments.forEach(enroll => {
+    [...new Set(attendanceData.map(a => a.enroll))].forEach(enroll => {
         let opt = document.createElement("option");
         opt.value = enroll;
         opt.textContent = enroll;
         select.appendChild(opt);
     });
 
-    // Clear table
-    document.querySelector("#attendanceTable tbody").innerHTML = "";
+    document.getElementById("attendanceCard").innerHTML = "";
 }
 
-// Display attendance
 function filterAttendance() {
     let enroll = document.getElementById("enrollmentSelect").value;
-    let tbody = document.querySelector("#attendanceTable tbody");
-    tbody.innerHTML = "";
+    let card = document.getElementById("attendanceCard");
 
-    let result = attendanceData.filter(a => a.enroll === enroll);
+    let result = attendanceData.find(a => a.enroll === enroll);
+    if (!result) return;
 
-    result.forEach(a => {
-        tbody.innerHTML += `
-            <tr>
-                <td>${a.enroll}</td>
-                <td>${a.name}</td>
-                <td>${a.section}</td>
-                <td>${a.tp}</td>
-                <td>${a.tab}</td>
-                <td>${a.per}</td>
-                <td>${a.sta}</td>
-            </tr>
-        `;
-    });
+    let statusText = result.sta.trim().toLowerCase();
+    let statusClass = (statusText === "eligible")
+        ? "status-eligible"
+        : "status-not-eligible";
+
+    card.innerHTML = `
+        <div class="row"><div class="label">Enrollment No</div><div class="value">${result.enroll}</div></div>
+        <div class="row"><div class="label">Name</div><div class="value">${result.name}</div></div>
+        <div class="row"><div class="label">Type</div><div class="value">${result.type}</div></div>
+        <div class="row"><div class="label">Total Present</div><div class="value">${result.tp}</div></div>
+        <div class="row"><div class="label">Total Absent</div><div class="value">${result.tab}</div></div>
+        <div class="row"><div class="label">Percentage</div><div class="value">${result.per}</div></div>
+        <div class="row">
+            <div class="label">Status</div>
+            <div class="value ${statusClass}">${result.sta}</div>
+        </div>
+    `;
 }
+
 </script>
 
 </body>
