@@ -1,11 +1,75 @@
 EnrollmentNo,Name,Type,Totalpresent,Totalab,Percentage,Status
-141870,Aashish ,Theory,0,5,0,Not Eligible
-141858,Aayush choudhary,Theory,0,5,0,Not Eligible
-141717,Abdul Wahab,Theory,0,5,0,Not Eligible
-141718,Abhay Singh Jamwal,Theory,4,1,80,Eligible
-141725,Abhigyan Kamal Sahu,Theory,0,5,0,Not Eligible
-141719,Abhinandan Thakur,Practical,2,3,40,Not Eligible
-141784,Abhishek kumar,Practical,2,3,40,Not Eligible
-141773,MD. SAIF ALAM,Practical,0,5,0,Not Eligible
-141774,Monika jangir,Practical,3,2,60,Not Eligible
-141775,Muskan ,Practical,5,0,100,Eligible
+141783,Abhinav Kumar Mishra,Theory,0,8,0,Not Eligible
+141785,Abhyudaya Sharma .,Theory,5,3,62.5,Not Eligible
+141787,Ankit Singh Shekhawat,Theory,5,3,62.5,Not Eligible
+141788,Anshul Singh Baghel,Theory,6,2,75,Eligible
+141789,Aryan Bhardwaj,Theory,4,4,50,Not Eligible
+141790,Chanchal Kumar,Theory,0,8,0,Not Eligible
+141802,Darshit Patel,Theory,0,8,0,Not Eligible
+141066,Eklavya ,Theory,7,1,87.5,Eligible
+141792,Gagan ,Theory,6,2,75,Eligible
+141759,Ishra S Jain,Theory,8,0,100,Eligible
+141860,Jyoti Saini,Theory,7,1,87.5,Eligible
+141793,Kanchan Vishwakarma,Theory,0,8,0,Not Eligible
+141794,Komal Kumari Kalwar,Theory,6,2,75,Eligible
+141795,Lalit Sharma,Theory,0,8,0,Not Eligible
+141796,Lav Sharma .,Theory,7,1,87.5,Eligible
+141797,Muktanur Rahman,Theory,0,8,0,Not Eligible
+141861,Mukund Kumar,Theory,8,0,100,Eligible
+141862,Namami Shastri .,Theory,5,3,62.5,Not Eligible
+145313,Neel Vakharia,Theory,0,8,0,Not Eligible
+141798,Nishant . Nishant,Theory,5,3,62.5,Not Eligible
+141799,Nitin Kumar Ram,Theory,0,8,0,Not Eligible
+141800,Pankaj Kumar,Theory,6,2,75,Eligible
+141801,Parth Singh,Theory,5,3,62.5,Not Eligible
+141804,Piyush Singhal,Theory,5,3,62.5,Not Eligible
+141805,Pranav Maurya,Theory,8,0,100,Eligible
+141806,Prasant Pratap Singh,Theory,0,8,0,Not Eligible
+141807,Prashant Mohan Singh,Theory,5,3,62.5,Not Eligible
+141808,Prashant Raj,Theory,6,2,75,Eligible
+141809,Prasun Kumar,Theory,6,2,75,Eligible
+141810,Pritam Singh,Theory,7,1,87.5,Eligible
+141811,Priya Kumari,Theory,5,3,62.5,Not Eligible
+141812,Rahul .,Theory,5,3,62.5,Not Eligible
+141813,Rahul Samota,Theory,5,3,62.5,Not Eligible
+141814,Raj Mahmmad,Theory,6,2,75,Eligible
+141815,Rajnandni Kumari .,Theory,5,3,62.5,Not Eligible
+141816,Rashika Tamboli,Theory,4,4,50,Not Eligible
+141818,Rishu Raj Kaushik,Theory,7,1,87.5,Eligible
+141822,Riya Awasthi,Theory,7,1,87.5,Eligible
+141823,Riya Jaiswal,Theory,6,2,75,Eligible
+141864,Rocky Kumar,Theory,7,1,87.5,Eligible
+141824,Rohan Kumar,Theory,5,3,62.5,Not Eligible
+141865,Rohit Kumar,Theory,0,8,0,Not Eligible
+141825,Roshan Jain,Theory,5,3,62.5,Not Eligible
+141791,Rudra Santosh Chaurasiya,Theory,5,3,62.5,Not Eligible
+141826,Sachin,Theory,4,4,50,Not Eligible
+141827,Sagar ,Theory,0,8,0,Not Eligible
+141828,Sahil,Theory,5,3,62.5,Not Eligible
+141829,Sahil,Theory,4,4,50,Not Eligible
+141831,Sameer Sharma,Theory,6,2,75,Eligible
+141832,Sanat Sharma,Theory,6,2,75,Eligible
+141833,Sandip Kumar,Theory,7,1,87.5,Eligible
+141866,Shaket ,Theory,3,5,37.5,Not Eligible
+141836,Shambhavi Srivastava,Theory,8,0,100,Eligible
+141837,Shankar Kumar,Theory,7,1,87.5,Eligible
+141838,Shivam Kumar,Theory,0,8,0,Not Eligible
+141839,Shivani Singh,Theory,8,0,100,Eligible
+141841,Sudhanshu Kumar Malhotra,Theory,8,0,100,Eligible
+141842,Sumant Kumar Yadav,Theory,5,3,62.5,Not Eligible
+141844,Sumit Pareek,Theory,6,2,75,Eligible
+141031,Sumit Pathak,Theory,8,0,100,Eligible
+141054,Sunny Kumar Sharma,Theory,0,8,0,Not Eligible
+141845,Suryanshu Rai,Theory,0,8,0,Not Eligible
+141846,Swayam Jain,Theory,8,0,100,Eligible
+145314,Tilak Gaur,Theory,5,3,62.5,Not Eligible
+141868,Utakarsh Singh,Theory,0,8,0,Not Eligible
+141847,Utkarsh Raj,Theory,8,0,100,Eligible
+141848,Utsav Shrivastav,Theory,8,0,100,Eligible
+141849,Uttam Suthar,Theory,0,8,0,Not Eligible
+141850,Ved Prakash,Theory,8,0,100,Eligible
+141851,Vikash Tiwari,Theory,6,2,75,Eligible
+141852,Vishal Ranjan,Theory,0,8,0,Not Eligible
+141853,Vishwash Singh,Theory,8,0,100,Eligible
+141854,Vivek Singh,Theory,7,1,87.5,Eligible
+141855,Yashaswi Pathrabe,Theory,5,3,62.5,Not Eligible
