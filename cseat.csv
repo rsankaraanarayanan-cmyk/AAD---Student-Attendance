@@ -1,80 +1,80 @@
-EnrollmentNo,Name,Type,Totalpresent,Totalab,Percentage,Status
-141870,Aashish ,Theory,0,5,0,Not Eligible
-141858,Aayush choudhary,Theory,0,5,0,Not Eligible
-141717,Abdul Wahab,Theory,0,5,0,Not Eligible
-141718,Abhay Singh Jamwal,Theory,4,1,80,Eligible
-141725,Abhigyan Kamal Sahu,Theory,0,5,0,Not Eligible
-141719,Abhinandan Thakur,Theory,2,3,40,Not Eligible
-141784,Abhishek kumar,Theory,2,3,40,Not Eligible
-141721,Abhishek Sharma,Theory,5,0,100,Eligible
-141722,Adarsh Kumar,Theory,5,0,100,Eligible
-141723,Adarsh Singh,Theory,0,5,0,Not Eligible
-141724,Aditya Kamal Sahu,Theory,1,4,20,Not Eligible
-141726,ADITYA KUMAR,Theory,0,5,0,Not Eligible
-141727,ADITYA KUMAR,Theory,2,3,40,Not Eligible
-141728,Aditya Mishra,Theory,2,3,40,Not Eligible
-141050,Aman Srivastava,Theory,3,2,60,Not Eligible
-141873,Amber Kumar singh,Theory,0,5,0,Not Eligible
-141730,Amit Bouddh,Theory,2,3,40,Not Eligible
-141731,Anand Raj .,Theory,2,3,40,Not Eligible
-141732,Ankit yadav,Theory,2,3,40,Not Eligible
-141046,Anshika Manglani,Theory,4,1,80,Eligible
-141733,Anurag Singh Yadav,Theory,5,0,100,Eligible
-141734,Arbaj ,Theory,1,4,20,Not Eligible
-141735,Archit kamboj,Theory,0,5,0,Not Eligible
-141875,Arghyadeep Das .,Theory,2,3,40,Not Eligible
-141871,Arman Toppo,Theory,0,5,0,Not Eligible
-141736,Arya Singh,Theory,5,0,100,Eligible
-141738,Aryan Dahiya,Theory,5,0,100,Eligible
-141056,Ashish Kumar,Theory,0,5,0,Not Eligible
-141739,Ashok Kumar,Theory,2,3,40,Not Eligible
-141740,Ashutosh Kumar,Theory,0,5,0,Not Eligible
-141741,Ashutosh Kumar yadav,Theory,2,3,40,Not Eligible
-141742,Atri Mishra .,Theory,0,5,0,Not Eligible
-141743,Ayush Shrivastava,Theory,2,3,40,Not Eligible
-141744,Ayush Tiwari,Theory,2,3,40,Not Eligible
-141746,Bhavesh ingale,Theory,4,1,80,Eligible
-141874,Bikash Lenka,Theory,0,5,0,Not Eligible
-141747,Chanchal Tanwer,Theory,0,5,0,Not Eligible
-141748,CharnjIt ,Theory,4,1,80,Eligible
-141749,Deepak kumar,Theory,0,5,0,Not Eligible
-141073,Deepanshu Choudhary,Theory,5,0,100,Eligible
-141045,DEEPANSHU SINGH,Theory,3,2,60,Not Eligible
-141750,Dhruv sharma,Theory,2,3,40,Not Eligible
-141751,Dikshant kumar,Theory,5,0,100,Eligible
-141756,Harsh janghu,Theory,3,2,60,Not Eligible
-141758,Himanshu Ranjan,Theory,2,3,40,Not Eligible
-141760,JATIN ,Theory,1,4,20,Not Eligible
-141761,Jishu Raj,Theory,5,0,100,Eligible
-141762,Jitin Kumar,Theory,3,2,60,Not Eligible
-141763,katyayani mani,Theory,3,2,60,Not Eligible
-141764,Kriti Kumari,Theory,5,0,100,Eligible
-141765,Kumari Krishna Yadav,Theory,2,3,40,Not Eligible
-141766,Kumawat Mahendra Sadularam,Theory,2,3,40,Not Eligible
-141767,kunal kumar,Theory,0,5,0,Not Eligible
-141768,Kundan chauhan,Theory,1,4,20,Not Eligible
-141769,Kundan Kumar,Theory,2,3,40,Not Eligible
-141770,Kungun yadav,Theory,5,0,100,Eligible
-141771,maithily patel,Theory,0,5,0,Not Eligible
-141772,Mangilal Prajapat,Theory,5,0,100,Eligible
-141068,Manshi ,Theory,5,0,100,Eligible
-141773,MD. SAIF ALAM,Theory,0,5,0,Not Eligible
-141774,Monika jangir,Theory,3,2,60,Not Eligible
-141775,Muskan ,Theory,5,0,100,Eligible
-141777,Nimesh Kadyan,Theory,2,3,40,Not Eligible
-141072,Niranjan kumar,Theory,1,4,20,Not Eligible
-141778,Nitesh Kumar,Theory,2,3,40,Not Eligible
-141779,Nitin ,Theory,0,5,0,Not Eligible
-141780,Om Narayan Singh,Theory,4,1,80,Eligible
-141781,RITIK ROUSHAN,Theory,0,5,0,Not Eligible
-141782,Sana Koshar,Theory,5,0,100,Eligible
-141886,Shahbaz Alam,Theory,2,3,40,Not Eligible
-141885,Shubham Kumar mall,Theory,2,3,40,Not Eligible
-141882,Sidhartha Kumar,Theory,5,0,100,Eligible
-141881,Simran Sharma,Theory,3,2,60,Not Eligible
-141880,Sneha ,Theory,5,0,100,Eligible
-141879,Sumit sahu,Theory,0,5,0,Not Eligible
-141878,Sunny Kumar .,Theory,2,3,40,Not Eligible
-141877,Suraj Kumar Singh,Theory,5,0,100,Eligible
-141876,Yash Rathor .,Theory,3,2,60,Not Eligible
-142005,Yashasvi Singh .,Theory,0,5,0,Not Eligible
+EnrollmentNo,Name,Type,Totalpresent,Totalab,Percentage,Status,presentdates,absentdates,lastupdated
+141870,Aashish ,Theory,0,7,0,Not Eligible,"""""","""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""",20.01.2026
+141858,Aayush choudhary,Theory,0,7,0,Not Eligible,"""""","""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""",20.01.2026
+141717,Abdul Wahab,Theory,0,7,0,Not Eligible,"""""","""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""",20.01.2026
+141718,Abhay Singh Jamwal,Theory,6,1,86,Eligible,"""05.01.2026,06.01.2026,07.01.2026,13.01.2026,19.01.2026,20.01.2026""","""12.01.2026""",20.01.2026
+141725,Abhigyan Kamal Sahu,Theory,1,6,14,Not Eligible,"""19.01.2026""","""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,20.01.2026""",20.01.2026
+141719,Abhinandan Thakur,Theory,3,4,43,Not Eligible,"""12.01.2026,13.01.2026,20.01.2026""","""05.01.2026,06.01.2026,07.01.2026,19.01.2026""",20.01.2026
+141784,Abhishek kumar,Theory,3,4,43,Not Eligible,"""07.01.2026,12.01.2026,19.01.2026""","""05.01.2026,06.01.2026,13.01.2026,20.01.2026""",20.01.2026
+141721,Abhishek Sharma,Theory,7,0,100,Eligible,"""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""""",20.01.2026
+141722,Adarsh Kumar,Theory,7,0,100,Eligible,"""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""""",20.01.2026
+141723,Adarsh Singh,Theory,0,7,0,Not Eligible,"""""","""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""",20.01.2026
+141724,Aditya Kamal Sahu,Theory,1,6,14,Not Eligible,"""12.01.2026""","""05.01.2026,06.01.2026,07.01.2026,13.01.2026,19.01.2026,20.01.2026""",20.01.2026
+141726,ADITYA KUMAR,Theory,0,7,0,Not Eligible,"""""","""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""",20.01.2026
+141727,ADITYA KUMAR,Theory,3,4,43,Not Eligible,"""05.01.2026,12.01.2026,19.01.2026""","""06.01.2026,07.01.2026,13.01.2026,20.01.2026""",20.01.2026
+141728,Aditya Mishra,Theory,4,3,57,Not Eligible,"""12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""05.01.2026,06.01.2026,07.01.2026""",20.01.2026
+141050,Aman Srivastava,Theory,4,3,57,Not Eligible,"""07.01.2026,12.01.2026,13.01.2026,19.01.2026""","""05.01.2026,06.01.2026,20.01.2026""",20.01.2026
+141873,Amber Kumar singh,Theory,2,5,29,Not Eligible,"""19.01.2026,20.01.2026""","""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026""",20.01.2026
+141730,Amit Bouddh,Theory,4,3,57,Not Eligible,"""12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""05.01.2026,06.01.2026,07.01.2026""",20.01.2026
+141731,Anand Raj .,Theory,3,4,43,Not Eligible,"""12.01.2026,13.01.2026,19.01.2026""","""05.01.2026,06.01.2026,07.01.2026,20.01.2026""",20.01.2026
+141732,Ankit yadav,Theory,4,3,57,Not Eligible,"""06.01.2026,07.01.2026,19.01.2026,20.01.2026""","""05.01.2026,12.01.2026,13.01.2026""",20.01.2026
+141046,Anshika Manglani,Theory,5,2,71,Eligible,"""06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026""","""05.01.2026,20.01.2026""",20.01.2026
+141733,Anurag Singh Yadav,Theory,7,0,100,Eligible,"""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""""",20.01.2026
+141734,Arbaj ,Theory,3,4,43,Not Eligible,"""13.01.2026,19.01.2026,20.01.2026""","""05.01.2026,06.01.2026,07.01.2026,12.01.2026""",20.01.2026
+141735,Archit kamboj,Theory,1,6,14,Not Eligible,"""20.01.2026""","""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026""",20.01.2026
+141875,Arghyadeep Das .,Theory,4,3,57,Not Eligible,"""12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""05.01.2026,06.01.2026,07.01.2026""",20.01.2026
+141871,Arman Toppo,Theory,2,5,29,Not Eligible,"""19.01.2026,20.01.2026""","""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026""",20.01.2026
+141736,Arya Singh,Theory,7,0,100,Eligible,"""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""""",20.01.2026
+141738,Aryan Dahiya,Theory,7,0,100,Eligible,"""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""""",20.01.2026
+141056,Ashish Kumar,Theory,0,7,0,Not Eligible,"""""","""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""",20.01.2026
+141739,Ashok Kumar,Theory,4,3,57,Not Eligible,"""12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""05.01.2026,06.01.2026,07.01.2026""",20.01.2026
+141740,Ashutosh Kumar,Theory,0,7,0,Not Eligible,"""""","""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""",20.01.2026
+141741,Ashutosh Kumar yadav,Theory,4,3,57,Not Eligible,"""12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""05.01.2026,06.01.2026,07.01.2026""",20.01.2026
+141742,Atri Mishra .,Theory,0,7,0,Not Eligible,"""""","""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""",20.01.2026
+141743,Ayush Shrivastava,Theory,3,4,43,Not Eligible,"""12.01.2026,13.01.2026,19.01.2026""","""05.01.2026,06.01.2026,07.01.2026,20.01.2026""",20.01.2026
+141744,Ayush Tiwari,Theory,4,3,57,Not Eligible,"""12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""05.01.2026,06.01.2026,07.01.2026""",20.01.2026
+141746,Bhavesh ingale,Theory,6,1,86,Eligible,"""06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""05.01.2026""",20.01.2026
+141874,Bikash Lenka,Theory,0,7,0,Not Eligible,"""""","""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""",20.01.2026
+141747,Chanchal Tanwer,Theory,0,7,0,Not Eligible,"""""","""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""",20.01.2026
+141748,CharnjIt ,Theory,6,1,86,Eligible,"""06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""05.01.2026""",20.01.2026
+141749,Deepak kumar,Theory,2,5,29,Not Eligible,"""19.01.2026,20.01.2026""","""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026""",20.01.2026
+141073,Deepanshu Choudhary,Theory,7,0,100,Eligible,"""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""""",20.01.2026
+141045,DEEPANSHU SINGH,Theory,5,2,71,Not Eligible,"""06.01.2026,07.01.2026,12.01.2026,19.01.2026,20.01.2026""","""05.01.2026,13.01.2026""",20.01.2026
+141750,Dhruv sharma,Theory,4,3,57,Not Eligible,"""12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""05.01.2026,06.01.2026,07.01.2026""",20.01.2026
+141751,Dikshant kumar,Theory,7,0,100,Eligible,"""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""""",20.01.2026
+141756,Harsh janghu,Theory,5,2,71,Not Eligible,"""05.01.2026,06.01.2026,12.01.2026,19.01.2026,20.01.2026""","""07.01.2026,13.01.2026""",20.01.2026
+141758,Himanshu Ranjan,Theory,4,3,57,Not Eligible,"""12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""05.01.2026,06.01.2026,07.01.2026""",20.01.2026
+141760,JATIN ,Theory,3,4,43,Not Eligible,"""12.01.2026,19.01.2026,20.01.2026""","""05.01.2026,06.01.2026,07.01.2026,13.01.2026""",20.01.2026
+141761,Jishu Raj,Theory,7,0,100,Eligible,"""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""""",20.01.2026
+141762,Jitin Kumar,Theory,5,2,71,Not Eligible,"""07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""05.01.2026,06.01.2026""",20.01.2026
+141763,katyayani mani,Theory,5,2,71,Not Eligible,"""06.01.2026,07.01.2026,13.01.2026,19.01.2026,20.01.2026""","""05.01.2026,12.01.2026""",20.01.2026
+141764,Kriti Kumari,Theory,7,0,100,Eligible,"""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""""",20.01.2026
+141765,Kumari Krishna Yadav,Theory,4,3,57,Not Eligible,"""12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""05.01.2026,06.01.2026,07.01.2026""",20.01.2026
+141766,Kumawat Mahendra Sadularam,Theory,3,4,43,Not Eligible,"""12.01.2026,13.01.2026,19.01.2026""","""05.01.2026,06.01.2026,07.01.2026,20.01.2026""",20.01.2026
+141767,kunal kumar,Theory,0,7,0,Not Eligible,"""""","""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""",20.01.2026
+141768,Kundan chauhan,Theory,3,4,43,Not Eligible,"""12.01.2026,19.01.2026,20.01.2026""","""05.01.2026,06.01.2026,07.01.2026,13.01.2026""",20.01.2026
+141769,Kundan Kumar,Theory,4,3,57,Not Eligible,"""12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""05.01.2026,06.01.2026,07.01.2026""",20.01.2026
+141770,Kungun yadav,Theory,7,0,100,Eligible,"""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""""",20.01.2026
+141771,maithily patel,Theory,2,5,29,Not Eligible,"""19.01.2026,20.01.2026""","""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026""",20.01.2026
+141772,Mangilal Prajapat,Theory,5,2,71,Eligible,"""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026""","""19.01.2026,20.01.2026""",20.01.2026
+141068,Manshi ,Theory,7,0,100,Eligible,"""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""""",20.01.2026
+141773,MD. SAIF ALAM,Theory,0,7,0,Not Eligible,"""""","""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""",20.01.2026
+141774,Monika jangir,Theory,5,2,71,Not Eligible,"""05.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""06.01.2026,07.01.2026""",20.01.2026
+141775,Muskan ,Theory,7,0,100,Eligible,"""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""""",20.01.2026
+141777,Nimesh Kadyan,Theory,3,4,43,Not Eligible,"""06.01.2026,12.01.2026,19.01.2026""","""05.01.2026,07.01.2026,13.01.2026,20.01.2026""",20.01.2026
+141072,Niranjan kumar,Theory,3,4,43,Not Eligible,"""12.01.2026,19.01.2026,20.01.2026""","""05.01.2026,06.01.2026,07.01.2026,13.01.2026""",20.01.2026
+141778,Nitesh Kumar,Theory,4,3,57,Not Eligible,"""12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""05.01.2026,06.01.2026,07.01.2026""",20.01.2026
+141779,Nitin ,Theory,1,6,14,Not Eligible,"""19.01.2026""","""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,20.01.2026""",20.01.2026
+141780,Om Narayan Singh,Theory,6,1,86,Eligible,"""06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""05.01.2026""",20.01.2026
+141781,RITIK ROUSHAN,Theory,2,5,29,Not Eligible,"""19.01.2026,20.01.2026""","""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026""",20.01.2026
+141782,Sana Koshar,Theory,6,1,86,Eligible,"""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026""","""20.01.2026""",20.01.2026
+141886,Shahbaz Alam,Theory,4,3,57,Not Eligible,"""12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""05.01.2026,06.01.2026,07.01.2026""",20.01.2026
+141885,Shubham Kumar mall,Theory,4,3,57,Not Eligible,"""12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""05.01.2026,06.01.2026,07.01.2026""",20.01.2026
+141882,Sidhartha Kumar,Theory,6,1,86,Eligible,"""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026""","""20.01.2026""",20.01.2026
+141881,Simran Sharma,Theory,5,2,71,Not Eligible,"""07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""05.01.2026,06.01.2026""",20.01.2026
+141880,Sneha ,Theory,7,0,100,Eligible,"""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""""",20.01.2026
+141879,Sumit sahu,Theory,2,5,29,Not Eligible,"""19.01.2026,20.01.2026""","""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026""",20.01.2026
+141878,Sunny Kumar .,Theory,4,3,57,Not Eligible,"""05.01.2026,13.01.2026,19.01.2026,20.01.2026""","""06.01.2026,07.01.2026,12.01.2026""",20.01.2026
+141877,Suraj Kumar Singh,Theory,7,0,100,Eligible,"""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""","""""",20.01.2026
+141876,Yash Rathor .,Theory,4,3,57,Not Eligible,"""06.01.2026,07.01.2026,12.01.2026,20.01.2026""","""05.01.2026,13.01.2026,19.01.2026""",20.01.2026
+142005,Yashasvi Singh .,Theory,0,7,0,Not Eligible,"""""","""05.01.2026,06.01.2026,07.01.2026,12.01.2026,13.01.2026,19.01.2026,20.01.2026""",20.01.2026
