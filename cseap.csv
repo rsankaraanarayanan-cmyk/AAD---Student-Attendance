@@ -1,80 +1,80 @@
-EnrollmentNo,Name,Type,Totalpresent,Totalab,Percentage,Status
-141717,Abdul Wahab,Practical,0,3,0,Not Eligible
-141718,Abhay Singh Jamwal,Practical,2,1,67,Not Eligible
-141725,Abhigyan Kamal Sahu,Practical,0,3,0,Not Eligible
-141719,Abhinandan Thakur,Practical,1,2,33,Not Eligible
-141720,Abhishek kumar,Practical,0,3,0,Not Eligible
-141721,Abhishek Sharma,Practical,3,0,100,Eligible
-141722,Adarsh Kumar,Practical,2,1,67,Not Eligible
-141723,Adarsh Singh,Practical,0,3,0,Not Eligible
-141724,Aditya Kamal Sahu,Practical,0,3,0,Not Eligible
-141726,ADITYA KUMAR,Practical,0,3,0,Not Eligible
-141727,ADITYA KUMAR,Practical,0,3,0,Not Eligible
-141050,Aman Srivastava,Practical,1,2,33,Not Eligible
-141730,Amit Bouddh,Practical,2,1,67,Not Eligible
-141731,Anand Raj ,Practical,2,1,67,Not Eligible
-141732,Ankit yadav,Practical,1,2,33,Not Eligible
-141046,Anshika Manglani,Practical,3,0,100,Eligible
-141733,Anurag Singh Yadav,Practical,2,1,67,Not Eligible
-141734,Arbaj ,Practical,2,1,67,Not Eligible
-141735,archit kamboj,Practical,0,3,0,Not Eligible
-141736,Arya Singh,Practical,2,1,67,Not Eligible
-141738,Aryan Dahiya,Practical,2,1,67,Not Eligible
-141056,Ashish Kumar,Practical,0,3,0,Not Eligible
-141739,Ashok Kumar,Practical,2,1,67,Not Eligible
-141741,Ashutosh Kumar yadav,Practical,1,2,33,Not Eligible
-141742,Atri Mishra ,Practical,0,3,0,Not Eligible
-141743,Ayush Shrivastava,Practical,0,3,0,Not Eligible
-141744,Ayush Tiwari,Practical,2,1,67,Not Eligible
-141747,Chanchal Tanwer,Practical,0,3,0,Not Eligible
-141748,CharnjIt ,Practical,0,3,0,Not Eligible
-141749,Deepak kumar,Practical,0,3,0,Not Eligible
-141073,Deepanshu Choudhary,Practical,3,0,100,Eligible
-141045,DEEPANSHU SINGH,Practical,0,3,0,Not Eligible
-141750,Dhruv sharma,Practical,0,3,0,Not Eligible
-141751,Dikshant kumar,Practical,3,0,100,Eligible
-141756,Harsh janghu,Practical,1,2,33,Not Eligible
-141068,Manshi ,Practical,2,1,67,Not Eligible
-141072,Niranjan kumar,Practical,1,2,33,Not Eligible
-141870,Aashish ,Practical,0,2,0,Not Eligible
-141858,aayush choudhary,Practical,0,2,0,Not Eligible
-141728,Aditya Mishra,Practical,0,2,0,Not Eligible
-141873,Amber Kumar singh,Practical,1,1,50,Not Eligible
-141875,Arghyadeep Das .,Practical,1,1,50,Not Eligible
-141871,Arman Toppo,Practical,0,2,0,Not Eligible
-141740,Ashutosh Kumar,Practical,0,2,0,Not Eligible
-141746,Bhavesh ingale,Practical,2,0,100,Eligible
-141874,Bikash Lenka,Practical,0,2,0,Not Eligible
-141758,Himanshu Ranjan,Practical,1,1,50,Not Eligible
-141760,JATIN .,Practical,0,2,0,Not Eligible
-141761,Jishu Raj,Practical,1,1,50,Not Eligible
-141762,Jitin Kumar,Practical,2,0,100,Eligible
-141763,katyayani mani,Practical,1,1,50,Not Eligible
-141764,Kriti Kumari,Practical,2,0,100,Eligible
-141765,Kumari Krishna Yadav,Practical,1,1,50,Not Eligible
-141766,Kumawat Mahendra Sadularam,Practical,0,2,0,Not Eligible
-141767,kunal kumar,Practical,0,2,0,Not Eligible
-141768,kundan chauhan,Practical,1,1,50,Not Eligible
-141769,Kundan Kumar,Practical,1,1,50,Not Eligible
-141770,Kungun yadav,Practical,2,0,100,Eligible
-141771,maithily patel,Practical,1,1,50,Not Eligible
-141772,Mangilal Prajapat,Practical,2,0,100,Eligible
-141773,MD. SAIF ALAM,Practical,0,2,0,Not Eligible
-141774,Monika jangir,Practical,2,0,100,Eligible
-141775,Muskan .,Practical,2,0,100,Eligible
-141777,Nimesh Kadyan,Practical,1,1,50,Not Eligible
-141778,Nitesh Kumar,Practical,1,1,50,Not Eligible
-141779,Nitin ,Practical,0,2,0,Not Eligible
-141780,Om Narayan Singh,Practical,1,1,50,Not Eligible
-141781,RITIK ROUSHAN,Practical,1,1,50,Not Eligible
-141782,Sana Koshar,Practical,2,0,100,Eligible
-141886,Shahbaz Alam,Practical,0,2,0,Not Eligible
-141885,Shubham Kumar mall,Practical,1,1,50,Not Eligible
-141882,Sidhartha Kumar,Practical,2,0,100,Eligible
-141881,Simran Sharma,Practical,2,0,100,Eligible
-141880,Sneha ,Practical,2,0,100,Eligible
-141879,Sumit sahu,Practical,1,1,50,Not Eligible
-141878,Sunny Kumar ,Practical,1,1,50,Not Eligible
-141877,Suraj Kumar Singh,Practical,2,0,100,Eligible
-141876,Yash Rathor ,Practical,1,1,50,Not Eligible
-142005,Yashasvi Singh ,Practical,0,2,0,Not Eligible
+EnrollmentNo,Name,Type,Totalpresent,Totalab,Percentage,Status,presentdates,absentdates,lastupdated
+141717,Abdul Wahab,Practical,0,3,0,Not Eligible,,"06.01.2026,13.01.2026",17.01.2026
+141718,Abhay Singh Jamwal,Practical,3,0,100,Eligible,"06.01.2026,13.01.2026,17.01.2026",,17.01.2026
+141725,Abhigyan Kamal Sahu,Practical,0,3,0,Not Eligible,,"06.01.2026,13.01.2026",17.01.2026
+141719,Abhinandan Thakur,Practical,1,2,33,Not Eligible,17.01.2026,06.01.2026,17.01.2026
+141720,Abhishek kumar,Practical,0,3,0,Not Eligible,,"06.01.2026,13.01.2026",17.01.2026
+141721,Abhishek Sharma,Practical,3,0,100,Eligible,"06.01.2026,13.01.2026,17.01.2026",,17.01.2026
+141722,Adarsh Kumar,Practical,2,1,67,Not Eligible,"13.01.2026,17.01.2026",,17.01.2026
+141723,Adarsh Singh,Practical,0,3,0,Not Eligible,,"06.01.2026,13.01.2026",17.01.2026
+141724,Aditya Kamal Sahu,Practical,0,3,0,Not Eligible,,"06.01.2026,13.01.2026",17.01.2026
+141726,ADITYA KUMAR,Practical,0,3,0,Not Eligible,,"06.01.2026,13.01.2026",17.01.2026
+141727,ADITYA KUMAR,Practical,0,3,0,Not Eligible,,"06.01.2026,13.01.2026",17.01.2026
+141050,Aman Srivastava,Practical,2,1,67,Not Eligible,"13.01.2026,17.01.2026",,17.01.2026
+141730,Amit Bouddh,Practical,2,1,67,Not Eligible,"13.01.2026,17.01.2026",,17.01.2026
+141731,Anand Raj ,Practical,2,1,67,Not Eligible,"13.01.2026,17.01.2026",,17.01.2026
+141732,Ankit yadav,Practical,2,1,67,Not Eligible,"06.01.2026,17.01.2026",06.01.2026,17.01.2026
+141046,Anshika Manglani,Practical,3,0,100,Eligible,"06.01.2026,13.01.2026,17.01.2026",,17.01.2026
+141733,Anurag Singh Yadav,Practical,2,1,67,Not Eligible,"13.01.2026,17.01.2026",,17.01.2026
+141734,Arbaj ,Practical,2,1,67,Not Eligible,"13.01.2026,17.01.2026",,17.01.2026
+141735,archit kamboj,Practical,0,3,0,Not Eligible,,"06.01.2026,13.01.2026",17.01.2026
+141736,Arya Singh,Practical,3,0,100,Eligible,"06.01.2026,13.01.2026,17.01.2026",,17.01.2026
+141738,Aryan Dahiya,Practical,2,1,67,Not Eligible,"06.01.2026,13.01.2026",13.01.2026,17.01.2026
+141056,Ashish Kumar,Practical,0,3,0,Not Eligible,,"06.01.2026,13.01.2026",17.01.2026
+141739,Ashok Kumar,Practical,2,1,67,Not Eligible,"13.01.2026,17.01.2026",,17.01.2026
+141741,Ashutosh Kumar yadav,Practical,1,2,33,Not Eligible,17.01.2026,06.01.2026,17.01.2026
+141742,Atri Mishra ,Practical,0,3,0,Not Eligible,,"06.01.2026,13.01.2026",17.01.2026
+141743,Ayush Shrivastava,Practical,0,3,0,Not Eligible,,"06.01.2026,13.01.2026",17.01.2026
+141744,Ayush Tiwari,Practical,2,1,67,Not Eligible,"13.01.2026,17.01.2026",,17.01.2026
+141747,Chanchal Tanwer,Practical,0,3,0,Not Eligible,,"06.01.2026,13.01.2026",17.01.2026
+141748,CharnjIt ,Practical,1,2,33,Not Eligible,17.01.2026,06.01.2026,17.01.2026
+141749,Deepak kumar,Practical,0,3,0,Not Eligible,,"06.01.2026,13.01.2026",17.01.2026
+141073,Deepanshu Choudhary,Practical,3,0,100,Eligible,"06.01.2026,13.01.2026,17.01.2026",,17.01.2026
+141045,DEEPANSHU SINGH,Practical,1,2,33,Not Eligible,17.01.2026,06.01.2026,17.01.2026
+141750,Dhruv sharma,Practical,1,2,33,Not Eligible,17.01.2026,06.01.2026,17.01.2026
+141751,Dikshant kumar,Practical,3,0,100,Eligible,"06.01.2026,13.01.2026,17.01.2026",,17.01.2026
+141756,Harsh janghu,Practical,1,2,33,Not Eligible,13.01.2026,13.01.2026,17.01.2026
+141068,Manshi ,Practical,2,1,67,Not Eligible,"06.01.2026,13.01.2026",13.01.2026,17.01.2026
+141072,Niranjan kumar,Practical,1,2,33,Not Eligible,13.01.2026,13.01.2026,17.01.2026
+141870,Aashish ,Practical,0,2,0,Not Eligible,"""""","""08.01.2026,17.01.2026""",17.01.2026
+141858,aayush choudhary,Practical,0,2,0,Not Eligible,"""""","""08.01.2026,17.01.2026""",17.01.2026
+141728,Aditya Mishra,Practical,1,1,50,Not Eligible,"""17.01.2026""","""08.01.2026""",17.01.2026
+141873,Amber Kumar singh,Practical,2,0,100,Eligible,"""08.01.2026,17.01.2026""","""""",17.01.2026
+141875,Arghyadeep Das .,Practical,1,1,50,Not Eligible,"""17.01.2026""","""08.01.2026""",17.01.2026
+141871,Arman Toppo,Practical,0,2,0,Not Eligible,"""""","""08.01.2026,17.01.2026""",17.01.2026
+141740,Ashutosh Kumar,Practical,0,2,0,Not Eligible,"""""","""08.01.2026,17.01.2026""",17.01.2026
+141746,Bhavesh ingale,Practical,2,0,100,Eligible,"""08.01.2026,17.01.2026""","""""",17.01.2026
+141874,Bikash Lenka,Practical,0,2,0,Not Eligible,"""""","""08.01.2026,17.01.2026""",17.01.2026
+141758,Himanshu Ranjan,Practical,1,1,50,Not Eligible,"""17.01.2026""","""08.01.2026""",17.01.2026
+141760,JATIN .,Practical,0,2,0,Not Eligible,"""""","""08.01.2026,17.01.2026""",17.01.2026
+141761,Jishu Raj,Practical,1,1,50,Not Eligible,"""08.01.2026""","""17.01.2026""",17.01.2026
+141762,Jitin Kumar,Practical,2,0,100,Eligible,"""08.01.2026,17.01.2026""","""""",17.01.2026
+141763,katyayani mani,Practical,1,1,50,Not Eligible,"""08.01.2026""","""17.01.2026""",17.01.2026
+141764,Kriti Kumari,Practical,2,0,100,Eligible,"""08.01.2026,17.01.2026""","""""",17.01.2026
+141765,Kumari Krishna Yadav,Practical,1,1,50,Not Eligible,"""17.01.2026""","""08.01.2026""",17.01.2026
+141766,Kumawat Mahendra Sadularam,Practical,1,1,50,Not Eligible,"""17.01.2026""","""08.01.2026""",17.01.2026
+141767,kunal kumar,Practical,1,1,50,Not Eligible,"""17.01.2026""","""08.01.2026""",17.01.2026
+141768,kundan chauhan,Practical,1,1,50,Not Eligible,"""08.01.2026""","""17.01.2026""",17.01.2026
+141769,Kundan Kumar,Practical,1,1,50,Not Eligible,"""17.01.2026""","""08.01.2026""",17.01.2026
+141770,Kungun yadav,Practical,2,0,100,Eligible,"""08.01.2026,17.01.2026""","""""",17.01.2026
+141771,maithily patel,Practical,1,1,50,Not Eligible,"""08.01.2026""","""17.01.2026""",17.01.2026
+141772,Mangilal Prajapat,Practical,2,0,100,Eligible,"""08.01.2026,17.01.2026""","""""",17.01.2026
+141773,MD. SAIF ALAM,Practical,0,2,0,Not Eligible,"""""","""08.01.2026,17.01.2026""",17.01.2026
+141774,Monika jangir,Practical,2,0,100,Eligible,"""08.01.2026,17.01.2026""","""""",17.01.2026
+141775,Muskan .,Practical,2,0,100,Eligible,"""08.01.2026,17.01.2026""","""""",17.01.2026
+141777,Nimesh Kadyan,Practical,1,1,50,Not Eligible,"""08.01.2026""","""17.01.2026""",17.01.2026
+141778,Nitesh Kumar,Practical,1,1,50,Not Eligible,"""17.01.2026""","""08.01.2026""",17.01.2026
+141779,Nitin ,Practical,1,1,50,Not Eligible,"""17.01.2026""","""08.01.2026""",17.01.2026
+141780,Om Narayan Singh,Practical,2,0,100,Eligible,"""08.01.2026,17.01.2026""","""""",17.01.2026
+141781,RITIK ROUSHAN,Practical,1,1,50,Not Eligible,"""17.01.2026""","""08.01.2026""",17.01.2026
+141782,Sana Koshar,Practical,2,0,100,Eligible,"""08.01.2026,17.01.2026""","""""",17.01.2026
+141886,Shahbaz Alam,Practical,0,2,0,Not Eligible,"""""","""08.01.2026,17.01.2026""",17.01.2026
+141885,Shubham Kumar mall,Practical,1,1,50,Not Eligible,"""17.01.2026""","""08.01.2026""",17.01.2026
+141882,Sidhartha Kumar,Practical,2,0,100,Eligible,"""08.01.2026,17.01.2026""","""""",17.01.2026
+141881,Simran Sharma,Practical,2,0,100,Eligible,"""08.01.2026,17.01.2026""","""""",17.01.2026
+141880,Sneha ,Practical,2,0,100,Eligible,"""08.01.2026,17.01.2026""","""""",17.01.2026
+141879,Sumit sahu,Practical,1,1,50,Not Eligible,"""""","""""",17.01.2026
+141878,Sunny Kumar ,Practical,2,0,100,Eligible,"""""","""""",17.01.2026
+141877,Suraj Kumar Singh,Practical,2,0,100,Eligible,"""""","""""",17.01.2026
+141876,Yash Rathor ,Practical,1,1,50,Not Eligible,"""""","""""",17.01.2026
+142005,Yashasvi Singh ,Practical,0,2,0,Not Eligible,"""""","""""",17.01.2026

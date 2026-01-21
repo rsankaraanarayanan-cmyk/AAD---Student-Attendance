@@ -5,18 +5,9 @@
 <title>Student Attendance Viewer</title>
 
 <style>
-body {
-    font-family: Arial, sans-serif;
-    padding: 15px;
-}
-
-h1, h2 {
-    text-align: center;
-}
-
-label {
-    font-weight: bold;
-}
+body { font-family: Arial, sans-serif; padding: 15px; }
+h1, h2 { text-align: center; }
+label { font-weight: bold; }
 
 select {
     width: 100%;
@@ -42,15 +33,8 @@ select {
     border-bottom: 1px solid #eee;
 }
 
-.label {
-    font-weight: bold;
-}
-
-.value {
-    text-align: right;
-    max-width: 220px;
-    word-wrap: break-word;
-}
+.label { font-weight: bold; }
+.value { text-align: right; max-width: 220px; }
 
 .clickable {
     color: #0066cc;
@@ -59,23 +43,16 @@ select {
     text-decoration: underline;
 }
 
-.status-eligible {
-    color: green;
-    font-weight: bold;
-}
+.status-eligible { color: green; font-weight: bold; }
+.status-not-eligible { color: red; font-weight: bold; }
 
-.status-not-eligible {
-    color: red;
-    font-weight: bold;
-}
+/* MODAL */
 .modal {
     display: none;
     position: fixed;
     z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
     background: rgba(0,0,0,0.4);
 }
 
@@ -86,12 +63,6 @@ select {
     width: 90%;
     max-width: 400px;
     border-radius: 10px;
-    font-size: 16px;
-}
-
-.modal-content h3 {
-    margin-top: 0;
-    text-align: center;
 }
 
 .date-list {
@@ -100,17 +71,6 @@ select {
     line-height: 1.6;
     text-align: left;
 }
-
-.close-btn {
-    text-align: center;
-    margin-top: 15px;
-}
-
-.close-btn button {
-    padding: 8px 20px;
-    font-size: 16px;
-}
-
 </style>
 </head>
 
@@ -144,30 +104,36 @@ select {
 
 <div id="attendanceCard" class="card"></div>
 
+<!-- MODAL (ONLY ONCE) -->
+<div id="dateModal" class="modal">
+    <div class="modal-content">
+        <h3 id="modalTitle"></h3>
+        <div id="modalBody" class="date-list"></div>
+        <br>
+        <button onclick="closeModal()">Close</button>
+    </div>
+</div>
+
 <script>
 let attendanceData = [];
 
 function loadAttendanceFile() {
     const section = sectionSelect.value;
     const type = typeSelect.value;
-
     if (!section || !type) return;
 
-    const file = section + type + ".csv"; // cseat.csv, cseap.csv...
-
-    fetch(file)
+    fetch(section + type + ".csv")
         .then(res => res.text())
         .then(data => {
             attendanceData = [];
             const rows = data.trim().split("\n");
-            rows.shift(); // remove header
+            rows.shift();
 
             rows.forEach(row => {
                 const cols = row.match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g);
+                if (!cols || cols.length < 10) return;
 
-                if (cols.length < 9) return;
-
-               attendanceData.push({
+                attendanceData.push({
                     enroll: cols[0].trim(),
                     name: cols[1].trim(),
                     type: cols[2].trim(),
@@ -175,12 +141,10 @@ function loadAttendanceFile() {
                     tab: cols[4].trim(),
                     per: cols[5].trim(),
                     sta: cols[6].trim(),
-                    presentDates: cols[7].replace(/"/g, "").trim(),
-                    absentDates: cols[8].replace(/"/g, "").trim(),
-                    lastUpdated: cols[9].replace(/"/g, "").trim()   // ✅ NEW
+                    presentDates: cols[7].replace(/"/g,""),
+                    absentDates: cols[8].replace(/"/g,""),
+                    lastUpdated: cols[9].replace(/"/g,"")
                 });
-
-
             });
 
             loadEnrollmentDropdown();
@@ -189,82 +153,49 @@ function loadAttendanceFile() {
 
 function loadEnrollmentDropdown() {
     enrollmentSelect.innerHTML = '<option value="">-- Select --</option>';
-
-    [...new Set(attendanceData.map(a => a.enroll))].forEach(enroll => {
-        const opt = document.createElement("option");
-        opt.value = enroll;
-        opt.textContent = enroll;
-        enrollmentSelect.appendChild(opt);
+    [...new Set(attendanceData.map(a => a.enroll))].forEach(e => {
+        enrollmentSelect.innerHTML += `<option value="${e}">${e}</option>`;
     });
-
     attendanceCard.innerHTML = "";
 }
 
 function filterAttendance() {
-    const enroll = enrollmentSelect.value;
-    const result = attendanceData.find(a => a.enroll === enroll);
-    if (!result) return;
+    const r = attendanceData.find(a => a.enroll === enrollmentSelect.value);
+    if (!r) return;
 
-    const statusClass =
-        result.sta.toLowerCase().includes("eligible")
-        ? "status-eligible"
-        : "status-not-eligible";
+    const cls = r.sta.toLowerCase().includes("eligible")
+        ? "status-eligible" : "status-not-eligible";
 
     attendanceCard.innerHTML = `
-        <div class="row"><div class="label">Enrollment No</div><div class="value">${result.enroll}</div></div>
-        <div class="row"><div class="label">Name</div><div class="value">${result.name}</div></div>
-        <div class="row"><div class="label">Type</div><div class="value">${result.type}</div></div>
+        <div class="row"><div class="label">Enrollment No</div><div class="value">${r.enroll}</div></div>
+        <div class="row"><div class="label">Name</div><div class="value">${r.name}</div></div>
+        <div class="row"><div class="label">Type</div><div class="value">${r.type}</div></div>
 
         <div class="row">
             <div class="label">Total Present</div>
-            <div class="value clickable"
-                 onclick="showMessage('Present Dates', '${result.presentDates || 'No data'}')">
-                 ${result.tp}
-            </div>
+            <div class="value clickable" onclick="showMessage('Present Dates','${r.presentDates}')">${r.tp}</div>
         </div>
 
         <div class="row">
             <div class="label">Total Absent</div>
-            <div class="value clickable"
-                 onclick="showMessage('Absent Dates', '${result.absentDates || 'No data'}')">
-                 ${result.tab}
-            </div>
+            <div class="value clickable" onclick="showMessage('Absent Dates','${r.absentDates}')">${r.tab}</div>
         </div>
 
-        <div class="row"><div class="label">Percentage</div><div class="value">${result.per}</div></div>
-        <div class="row"><div class="label">Status</div><div class="value ${statusClass}">${result.sta}</div></div>
-        <div class="row"><div class="label">Attendance updated till</div><div class="value">${result.lastUpdated}</div>
-        </div>
-        <div id="dateModal" class="modal">
-    <div class="modal-content">
-        <h3 id="modalTitle"></h3>
-        <div id="modalBody" class="date-list"></div>
-        <div class="close-btn">
-            <button onclick="closeModal()">Close</button>
-        </div>
-    </div>
-</div>
-
-
+        <div class="row"><div class="label">Percentage</div><div class="value">${r.per}</div></div>
+        <div class="row"><div class="label">Status</div><div class="value ${cls}">${r.sta}</div></div>
+        <div class="row"><div class="label">Attendance updated till</div><div class="value">${r.lastUpdated}</div></div>
     `;
 }
 
-function showMessage(title, message) {
-    document.getElementById("modalTitle").innerText = title;
-
-    // Convert comma-separated dates into line-by-line format
-    let formatted = message
-        ? message.split(",").map(d => "• " + d.trim()).join("<br>")
-        : "No data";
-
-    document.getElementById("modalBody").innerHTML = formatted;
-    document.getElementById("dateModal").style.display = "block";
+function showMessage(title, msg) {
+    modalTitle.innerText = title;
+    modalBody.innerHTML = msg.split(",").map(d => "• " + d.trim()).join("<br>");
+    dateModal.style.display = "block";
 }
 
 function closeModal() {
-    document.getElementById("dateModal").style.display = "none";
+    dateModal.style.display = "none";
 }
-
 </script>
 
 </body>
