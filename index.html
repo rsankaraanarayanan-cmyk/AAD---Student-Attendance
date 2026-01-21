@@ -34,7 +34,7 @@ select {
 }
 
 .label { font-weight: bold; }
-.value { text-align: right; max-width: 220px; }
+.value { text-align: right; max-width: 220px; word-wrap: break-word; }
 
 .clickable {
     color: #0066cc;
@@ -104,7 +104,7 @@ select {
 
 <div id="attendanceCard" class="card"></div>
 
-<!-- MODAL (ONLY ONCE) -->
+<!-- MODAL -->
 <div id="dateModal" class="modal">
     <div class="modal-content">
         <h3 id="modalTitle"></h3>
@@ -127,11 +127,11 @@ function loadAttendanceFile() {
         .then(data => {
             attendanceData = [];
             const rows = data.trim().split("\n");
-            rows.shift();
+            rows.shift(); // remove header
 
             rows.forEach(row => {
                 const cols = row.match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g);
-                if (!cols || cols.length < 10) return;
+                if (!cols || cols.length < 9) return;
 
                 attendanceData.push({
                     enroll: cols[0].trim(),
@@ -140,10 +140,9 @@ function loadAttendanceFile() {
                     tp: cols[3].trim(),
                     tab: cols[4].trim(),
                     per: cols[5].trim(),
-                    sta: cols[6].trim(),
-                    presentDates: cols[7].replace(/"/g,""),
-                    absentDates: cols[8].replace(/"/g,""),
-                    lastUpdated: cols[9].replace(/"/g,"")
+                    presentDates: cols[6].replace(/"/g,""),
+                    absentDates: cols[7].replace(/"/g,""),
+                    lastUpdated: cols[8].replace(/"/g,"")
                 });
             });
 
@@ -163,8 +162,10 @@ function filterAttendance() {
     const r = attendanceData.find(a => a.enroll === enrollmentSelect.value);
     if (!r) return;
 
-    const cls = r.sta.toLowerCase().includes("eligible")
-        ? "status-eligible" : "status-not-eligible";
+    const percentage = parseFloat(r.per);
+
+    const statusText = percentage >= 75 ? "Eligible" : "Not Eligible";
+    const statusClass = percentage >= 75 ? "status-eligible" : "status-not-eligible";
 
     attendanceCard.innerHTML = `
         <div class="row"><div class="label">Enrollment No</div><div class="value">${r.enroll}</div></div>
@@ -181,15 +182,17 @@ function filterAttendance() {
             <div class="value clickable" onclick="showMessage('Absent Dates','${r.absentDates}')">${r.tab}</div>
         </div>
 
-        <div class="row"><div class="label">Percentage</div><div class="value">${r.per}</div></div>
-        <div class="row"><div class="label">Status</div><div class="value ${cls}">${r.sta}</div></div>
+        <div class="row"><div class="label">Percentage</div><div class="value">${percentage}%</div></div>
+        <div class="row"><div class="label">Status</div><div class="value ${statusClass}">${statusText}</div></div>
         <div class="row"><div class="label">Attendance updated till</div><div class="value">${r.lastUpdated}</div></div>
     `;
 }
 
 function showMessage(title, msg) {
     modalTitle.innerText = title;
-    modalBody.innerHTML = msg.split(",").map(d => "• " + d.trim()).join("<br>");
+    modalBody.innerHTML = msg
+        ? msg.split(",").map(d => "• " + d.trim()).join("<br>")
+        : "No data";
     dateModal.style.display = "block";
 }
 
